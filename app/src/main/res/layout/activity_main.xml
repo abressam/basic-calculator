@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/firstNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:autofillHints="Ex: 20"
+            android:ems="10"
+            android:hint="@string/get_first_number_editText"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/secondNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:autofillHints="Ex: 20"
+            android:ems="10"
+            android:hint="@string/get_second_number_editText"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A"
+            app:layout_constraintEnd_toEndOf="@+id/firstNumber"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/firstNumber"
+            app:layout_constraintTop_toBottomOf="@+id/firstNumber" />
+
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="@string/add_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/secondNumber" />
+
+        <Button
+            android:id="@+id/subtract_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/subtract_button"
+            app:layout_constraintEnd_toEndOf="@+id/add_button"
+            app:layout_constraintStart_toStartOf="@+id/add_button"
+            app:layout_constraintTop_toBottomOf="@+id/add_button" />
+
+        <Button
+            android:id="@+id/multiply_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/multiply_button"
+            app:layout_constraintEnd_toEndOf="@+id/add_button"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/subtract_button"
+            app:layout_constraintTop_toBottomOf="@+id/subtract_button" />
+
+        <Button
+            android:id="@+id/divide_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/divide_button"
+            app:layout_constraintEnd_toEndOf="@+id/multiply_button"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/multiply_button"
+            app:layout_constraintTop_toBottomOf="@+id/multiply_button" />
+
+        <TextView
+            android:id="@+id/result_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="@string/result_TextView"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/divide_button"
+            app:layout_constraintHorizontal_bias="0.298"
+            app:layout_constraintStart_toStartOf="@+id/divide_button"
+            app:layout_constraintTop_toBottomOf="@+id/divide_button" />
+
+        <TextView
+            android:id="@+id/default_result_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="@string/default_result_TextView"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/result_textView"
+            app:layout_constraintStart_toEndOf="@+id/result_textView"
+            app:layout_constraintTop_toTopOf="@+id/result_textView"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/clean_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/clean_button"
+            app:layout_constraintEnd_toEndOf="@+id/divide_button"
+            app:layout_constraintHorizontal_bias="0.813"
+            app:layout_constraintStart_toStartOf="@+id/divide_button"
+            app:layout_constraintTop_toBottomOf="@+id/result_textView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

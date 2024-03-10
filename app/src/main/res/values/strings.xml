@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Basic Calculator</string>
+    <string name="get_first_number_editText">Informe o primeiro número</string>
+    <string name="get_second_number_editText">Informe o segundo número</string>
+    <string name="add_button">Adicionar (+)</string>
+    <string name="subtract_button">Subtrair (-)</string>
+    <string name="multiply_button">Multiplicar (*)</string>
+    <string name="divide_button">Dividir (/)</string>
+    <string name="result_TextView">Resultado:</string>
+    <string name="default_result_TextView">0</string>
+    <string name="clean_button">Limpar Campos</string>
+</resources>
